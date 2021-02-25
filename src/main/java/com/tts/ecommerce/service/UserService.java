@@ -24,7 +24,7 @@ public class UserService implements UserDetailsService {
     public User findByUsername(String username) {
         return userRepository.findByUsername(username);
     }
-
+//testing testing
     public void saveNew(User user) {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         userRepository.save(user);
